@@ -20,7 +20,7 @@ class Person{
         return $this->habit;
     }
 }
-$person = new Person("hoang",22,["reading book","watching movies","coding"]);
+$person = new Person("hoang",22,["game","muzic","sleep"]);
 echo '<pre/>';
 echo $person->getInfo();
 $habit = $person->getHabit();
