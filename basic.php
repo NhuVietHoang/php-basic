@@ -8,23 +8,22 @@ class Person{
     public $name ="";
     public $age = 0;
     public $interest =[];
-    public function __construct($name,$age,$habit=[]){
+    public function __construct($name,$age,$interest=[]){
          $this->name = $name;
          $this->age = $age;
-         $this->habit = $habit;
+         $this->interest = $interest;
     }
     public function getInfo(){
         return "<h3>name:$this->name</h3><h3>age:$this->age</h3>";
     }
-    public function getHabit(){
-        return $this->habit;
+    public function getInterest(){
+        return $this->interest;
     }
 }
 $person = new Person("hoang",22,["game","muzic","sleep"]);
 echo '<pre/>';
 echo $person->getInfo();
-$habit = $person->getHabit();
-echo "<legend>My Habit</legend>";
-foreach($habit as $key=>$val){
+$interest = $person->getInterest();
+foreach($interest as $key=>$val){
     echo"<h3>$key</h3>";echo "<h3>$val</h3>";
 }
