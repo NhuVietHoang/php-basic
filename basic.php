@@ -14,16 +14,16 @@ class Person{
          $this->interest = $interest;
     }
     public function getInfo(){
-        return "<h3>name:$this->name</h3><h3>age:$this->age</h3>";
+        return "name:$this->name age:$this->age";
     }
     public function getInterest(){
         return $this->interest;
     }
 }
 $person = new Person("hoang",22,["game","muzic","sleep"]);
-echo '<pre/>';
 echo $person->getInfo();
 $interest = $person->getInterest();
-foreach($interest as $key=>$val){
-    echo"<h3>$key</h3>";echo "<h3>$val</h3>";
+foreach($interest as $key=>$value){
+    echo"$key";
+    echo "$val";
 }
