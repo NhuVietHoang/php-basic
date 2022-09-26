@@ -64,19 +64,102 @@ là kiểu dữ liệu đơn giản chỉ có 2 giá trị là True or False
 # String funcions
 
 *   strlen($string): lấy độ dài 1 chuỗi
+VD:
+```php
+    $intern = "Nhu Viet Hoang-dok123 TTS IT";
+    $TTS = "123";
+    echo strlen($intern)."<br>";
+```
+kết quả: 28
+
 *   strrev(): Đảo ngược chuỗi
+VD:
+```php
+    $intern = "Nhu Viet Hoang-dok123 TTS IT";
+    $TTS = "123";
+    echo strrev($TTS)."<br>";
+```
+kết quả: 321
 *   strtolower(): chuyển toàn bộ chuỗi về chữ thường
+VD:
+```php
+    $intern = "Nhu Viet Hoang-dok123 TTS IT";
+    $TTS = "123";
+    echo strtolower($intern)."<br>";
+```
+kết quả: nhu viet hoang-dok123 tts it
 *   strtoupper(): chuyển toàn bộ chuỗi thành chữ in hoa
+VD:
+```php
+    $intern = "Nhu Viet Hoang-dok123 TTS IT";
+    $TTS = "123";
+    echo strtoupper($intern)."<br>";
+```
+NHU VIET HOANG-DOK123 TTS IT
 *   str_repalce('find','replace','$string'): tìm và thay thế văn bản trong 1 chuỗi
+```php
+    $intern = "Nhu Viet Hoang-dok123 TTS IT";
+    $TTS = "123";
+    echo str_replace("TTS","Thực tập sinh", "$intern")."<br>";
+```
+kết quả: Nhu Viet Hoang-dok123 Thực tập sinh IT
 *   str_repeat($string,repeat): Lặp lại chuỗi.
+```php
+    $intern = "Nhu Viet Hoang-dok123 TTS IT";
+    $TTS = "123";
+    echo str_repeat("$intern",3)."<br>";
+```
+kết quả: Nhu Viet Hoang-dok123 TTS ITNhu Viet Hoang-dok123 TTS ITNhu Viet Hoang-dok123 TTS IT
+
 
 # Array functions
 
 *   array_push(): chèn phần tử vào cuối mảng
+```php
+    $mang = ['honda','suzuki','dream'];
+    array_push($mang,'audi');
+    var_dump($mang);
+    echo "<br>";
+```
+kết quả:
+array(4) { [0]=> string(5) "honda" [1]=> string(6) "suzuki" [2]=> string(5) "dream" [3]=> string(4) "audi" } 
+
 *   array_unshift(): chèn phần tử vào đầu mảng
+```php
+    $mang = ['honda','suzuki','dream','audi'];
+    array_unshift($mang,'bycle');
+    var_dump($mang);
+    echo "<br>";
+```
+kết quả:
+array(5) { [0]=> string(5) "bycle" [1]=> string(5) "honda" [2]=> string(6) "suzuki" [3]=> string(5) "dream" [4]=> string(4) "audi" } 
+
 *   array_pop(): xoá phần tử cuối mảng
+```php
+    $mang = ['honda','suzuki','dream'];
+    array_pop($mang);
+    var_dump($mang);
+    echo "<br>";
+```
+kết quả :
+array(4) { [0]=> string(5) "bycle" [1]=> string(5) "honda" [2]=> string(6) "suzuki" [3]=> string(5) "dream" } 
+
 *   array_shift(): xoá phần tử đầu mảng
+```php
+    $mang = ['honda','suzuki','dream'];
+    var_dump($mang);
+    echo "<br>";
+```
+kết quả:
+array(3) { [0]=> string(5) "honda" [1]=> string(6) "suzuki" [2]=> string(5) "dream" } 
+
 *   count($ten_mang): đếm số phần tử trong mảng
+```php
+    $mang = ['honda','suzuki','dream'];
+    count($mang);
+    echo "<br>";
+```
+kết quả: 3
 
 # Loop, if else
 ## Loop while vs do while
